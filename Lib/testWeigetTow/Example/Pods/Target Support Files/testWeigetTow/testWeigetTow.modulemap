@@ -1,0 +1,6 @@
+framework module testWeigetTow {
+  umbrella header "testWeigetTow-umbrella.h"
+
+  export *
+  module * { export * }
+}

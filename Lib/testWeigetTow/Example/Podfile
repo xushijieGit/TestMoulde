@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'testWeigetTow_Example' do
+  pod 'testWeigetTow', :path => '../'
+  pod 'testWeiget', :path => '../../testWeiget'
+
+  target 'testWeigetTow_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

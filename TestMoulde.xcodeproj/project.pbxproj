@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA994C825B6A6B4A90593C52 /* Pods_TestMoulde.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8CEA93483AB5745C29676E /* Pods_TestMoulde.framework */; };
 		EE0ADD20263919D2001354FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0ADD1F263919D2001354FE /* AppDelegate.m */; };
 		EE0ADD23263919D2001354FE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0ADD22263919D2001354FE /* SceneDelegate.m */; };
 		EE0ADD26263919D2001354FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0ADD25263919D2001354FE /* ViewController.m */; };
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72EC1C33A276FD75B1CD9E93 /* Pods-TestMoulde.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMoulde.debug.xcconfig"; path = "Target Support Files/Pods-TestMoulde/Pods-TestMoulde.debug.xcconfig"; sourceTree = "<group>"; };
+		BF8CEA93483AB5745C29676E /* Pods_TestMoulde.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestMoulde.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F3DC9F4FA031CA7F8D4CAC /* Pods-TestMoulde.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMoulde.release.xcconfig"; path = "Target Support Files/Pods-TestMoulde/Pods-TestMoulde.release.xcconfig"; sourceTree = "<group>"; };
 		EE0ADD1B263919D2001354FE /* TestMoulde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMoulde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0ADD1E263919D2001354FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EE0ADD1F263919D2001354FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA994C825B6A6B4A90593C52 /* Pods_TestMoulde.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C2C91312009A5E8001DA60C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CEA93483AB5745C29676E /* Pods_TestMoulde.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27CA47750E1669DF3755203E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72EC1C33A276FD75B1CD9E93 /* Pods-TestMoulde.debug.xcconfig */,
+				D8F3DC9F4FA031CA7F8D4CAC /* Pods-TestMoulde.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EE0ADD12263919D2001354FE = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +110,8 @@
 				EE0ADD39263919D6001354FE /* TestMouldeTests */,
 				EE0ADD44263919D6001354FE /* TestMouldeUITests */,
 				EE0ADD1C263919D2001354FE /* Products */,
+				27CA47750E1669DF3755203E /* Pods */,
+				1C2C91312009A5E8001DA60C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE0ADD4A263919D6001354FE /* Build configuration list for PBXNativeTarget "TestMoulde" */;
 			buildPhases = (
+				8EE7B81594829E022F82756B /* [CP] Check Pods Manifest.lock */,
 				EE0ADD17263919D2001354FE /* Sources */,
 				EE0ADD18263919D2001354FE /* Frameworks */,
 				EE0ADD19263919D2001354FE /* Resources */,
+				58EBFE72C748A79E011EF450 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +286,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58EBFE72C748A79E011EF450 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestMoulde/Pods-TestMoulde-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestMoulde/Pods-TestMoulde-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestMoulde/Pods-TestMoulde-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EE7B81594829E022F82756B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestMoulde-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE0ADD17263919D2001354FE /* Sources */ = {
@@ -438,11 +506,13 @@
 		};
 		EE0ADD4B263919D6001354FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72EC1C33A276FD75B1CD9E93 /* Pods-TestMoulde.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestMoulde/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,11 +525,13 @@
 		};
 		EE0ADD4C263919D6001354FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F3DC9F4FA031CA7F8D4CAC /* Pods-TestMoulde.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestMoulde/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

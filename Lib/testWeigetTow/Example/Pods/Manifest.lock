@@ -1,0 +1,22 @@
+PODS:
+  - testWeiget (0.1.0)
+  - testWeigetTow (0.1.0):
+    - testWeiget
+
+DEPENDENCIES:
+  - testWeiget (from `../../testWeiget`)
+  - testWeigetTow (from `../`)
+
+EXTERNAL SOURCES:
+  testWeiget:
+    :path: "../../testWeiget"
+  testWeigetTow:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  testWeiget: 072eeb5a8d683ef0abddd6089b5e522660106604
+  testWeigetTow: bffe239f171a8a202f05fdaed4ef6c0ef35a52b2
+
+PODFILE CHECKSUM: e710112ae2fea39d7b177c44085fbe8c143e55dc
+
+COCOAPODS: 1.10.1

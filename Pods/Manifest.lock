@@ -1,0 +1,16 @@
+PODS:
+  - testWeiget (0.1.0)
+
+DEPENDENCIES:
+  - testWeiget (from `Lib/testWeiget`)
+
+EXTERNAL SOURCES:
+  testWeiget:
+    :path: Lib/testWeiget
+
+SPEC CHECKSUMS:
+  testWeiget: 072eeb5a8d683ef0abddd6089b5e522660106604
+
+PODFILE CHECKSUM: e35abe4bdb18653d71f28b9a52cda3e5e2159b64
+
+COCOAPODS: 1.10.1

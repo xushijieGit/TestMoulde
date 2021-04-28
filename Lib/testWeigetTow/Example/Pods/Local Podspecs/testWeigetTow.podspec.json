@@ -1,0 +1,27 @@
+{
+  "name": "testWeigetTow",
+  "version": "0.1.0",
+  "summary": "A short description of testWeigetTow.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/xushijieGit/testWeigetTow",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xushijieGit": "xushijie@starlinke.com"
+  },
+  "source": {
+    "git": "https://github.com/xushijieGit/testWeigetTow.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "testWeigetTow/Classes/**/*",
+  "dependencies": {
+    "testWeiget": [
+
+    ]
+  }
+}
